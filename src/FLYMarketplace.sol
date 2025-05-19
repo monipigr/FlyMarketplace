@@ -8,18 +8,6 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Pausable.sol";
 import "forge-std/console.sol";
 
-
-/**
-- Que se deba pagar fee para listar - listFee
-- Que se deba pagar fee para buy - buyFee
-- Que se puedan modificar la buyFee y la listFee
-- Que el owner pueda retirar las fees con withdraw()
-- Que incluya mecanismos de pausado (Pausable)
-- Que incluya algún test invariant
-- Con archivo remapping.txt
-- Script deploy
- */
-
 contract FLYMarketplace is ReentrancyGuard, Ownable, Pausable {
 
     struct Listing {
